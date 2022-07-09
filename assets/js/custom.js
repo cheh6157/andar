@@ -26,17 +26,17 @@ $(function(){
      * @version 1.0.0 |||| @since 2022-07-03 |||| @author 본인이름 (은호)
      *
      */
-     $( document ).ready( function() {
-      var Offset = $('.inner').offset();
       $( window ).scroll( function() {
-        if ( $( document ).scrollTop() > Offset.top ) {
-          $('.inner').addClass('fixed');
+        현재스크롤 = $(document).scrollTop();
+
+        if(현재스크롤 > 0){
+          $(".header").addClass('fixed')
+        }else{
+          $('.header').removeClass('fixed')
         }
-        else {
-          $('.inner').removeClass('fixed');
-        }
+
       });
-    });
+ 
 
 
 
@@ -86,11 +86,16 @@ $(function(){
      /* 
      * 
      * 
-     * 
+     * hb-menu sub-item 구역
      * @version 1.0.0 |||| @since 2022-01-16 |||| @author 본인이름 (Nico)
      */
     
-    
+        $('.hb-menu .btn-nav').click(function(e){
+
+          e.preventDefault();
+          $('.hb-menu .gnb-item .sub-list').stop().slideToggle();
+
+        })
     
     
     

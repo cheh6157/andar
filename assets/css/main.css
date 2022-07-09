@@ -138,4 +138,20 @@
 
 
 /* sc-info */
-.sc-info{position: relative;margin-bottom: 10px;}
+.sc-info{margin-bottom: 10px;}
+
+.sc-info .link-info{
+    background: url(../images/bg/membershipbg.jpg)no-repeat;
+    background-size: cover;
+    display: block;
+    height: 100%;
+    padding: 65px 20px;
+}
+
+.sc-info .link-info.offline{
+    background: url(../images/bg/offlinebg.jpg)no-repeat;
+    background-size: cover;
+    display: block;
+    height: 100%;
+    padding: 80px 20px 74px;
+}

@@ -214,29 +214,16 @@ body{
 }
 
 /* sc-info */
-
-.sc-info .link-info{
-    display: block;
-    height: 100%;
-}
-.sc-info .link-info img{
-    width: 100%;
-}
-.sc-info .text-box{
-    position: absolute;
-    z-index: 10;
-    top: 30%;
-    left: 5%;
+.sc-info {
     color: #fff;
 }
-
-.sc-info .text-box .title{
+.sc-info .title{
     font-size: 26px;
     line-height: 31px;
     font-weight: 700;
     letter-spacing: -0.02em;
 }
-.sc-info .text-box .desc{
+.sc-info .desc{
     font-size: 15px;
     line-height: 1.4;
     font-weight: 400;
@@ -244,7 +231,9 @@ body{
     padding: 15px 0 30px;
     box-sizing: border-box;
 }
-.sc-info .text-box .link-more{
+.sc-info .link-more{
+    color: #fff;
     border: 1px solid #fff;
     padding: 7px 25px 8px;
+    background: none;
 }
