@@ -199,7 +199,9 @@ body{
 /* sc-products */
 .sc-products .link-mor{
     position: absolute;
-    top: 12%;right: 10%;
+    top: 60px;
+    right: 5%;
+
 }.sc-products .link-mor::after{
     content: '';
     display: inline-block;

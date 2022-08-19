@@ -5,6 +5,7 @@
 /* header */
 
 .header{}
+
 .top-info{
     background: #000;
     color: #fff;
@@ -32,7 +33,7 @@
 }
 .header .inner{
     position: absolute;
-    z-index: 10;
+    z-index: 2;
     top: 40px;
     left: 0;
     width: 100%;
@@ -217,7 +218,6 @@
     display: none;
 }
 .row-bottom .gnb-area .sub-list{
-    display: block;
     position: absolute;
     width: 100%;
     display: flex;
@@ -259,6 +259,7 @@
 }
 .hb-menu.active{
     left: 0;
+    z-index: 100;
 }
 .hb-menu .login-area{
     padding: 32px 16px 30px 16px;
@@ -333,11 +334,12 @@
     display: block;
     width: 100%;
     height: 100%;
+    line-height: 40px;
 }
 .hb-menu .btn-nav::after{
     position: absolute;
-    top: 10%;
     right: 0;
+    top: 20px;
     content: '';
     display: block;
     transition-duration: .3s;
@@ -345,14 +347,14 @@
     height: 28px;
     background: url(../images/icon/hb-btn.png) no-repeat center/28px auto;
 }
-.hb-menu .gnb-item .sub-list{display: block;}
+.hb-menu .gnb-item .sub-list{}
 .hb-menu .gnb-item .sub-item{display: block;}
 .hb-menu .gnb-item .sub-item a{
     display: block;
     padding: 11px 0;
     color: #848484;
-    font-size: 15px;
-    line-height: 15px;
+    font-size: 16px;
+    line-height: 30px;
     letter-spacing: -0.5px;
     font-weight: 400;
 }
@@ -371,15 +373,16 @@
     display: block;
     width: 100%;
     height: 100%;
+    line-height: 40px;
 }
-.hb-menu .sub-list{}
-.hb-menu .sub-item{display: none;}
+.hb-menu .sub-list{display: none;}
+.hb-menu .sub-item{}
 .hb-menu .sub-item a{
     display: block;
     padding: 11px 0;
     color: #848484;
     font-size: 15px;
-    line-height: 15px;
+    line-height: 30px;
     letter-spacing: -0.5px;
     font-weight: 400;
 }
@@ -473,8 +476,23 @@
     font-weight: 400;
     color: #777;
 }
-
-
+.header .b-back{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: .3s;
+    background: rgba(0,0,0,0.65);
+}
+.header .b-back.active{
+    left: 0;
+    z-index: 2;
+    
+}
+/*여기까지 header */
 
 
 

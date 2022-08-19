@@ -13,12 +13,14 @@ $(function(){
         e.preventDefault();
 
         $('.hb-menu').addClass('active')
+        $('.header .b-back').addClass('active')
     })
 
     $('.btn-close').click(function(e){
         e.preventDefault();
 
         $('.hb-menu').removeClass('active')
+        $('.header .b-back').removeClass('active')
     })
 
      /* 
@@ -45,7 +47,7 @@ $(function(){
      * @version 1.0.0 |||| @since 2022-06-25 |||| @author 본인이름 (은호)
      *
      */
-        $('.row-bottom .btn-nav').click(function(e){
+        $('.row-bottom .gnb-inner').click(function(e){
             e.preventDefault();
             $('.row-bottom .sub-list').stop().slideToggle();
             
@@ -90,14 +92,19 @@ $(function(){
      * @version 1.0.0 |||| @since 2022-01-16 |||| @author 본인이름 (Nico)
      */
     
-        $('.hb-menu .btn-nav').click(function(e){
+        $('.hb-menu .link-gnb').click(function(e){
 
           e.preventDefault();
-          $('.hb-menu .gnb-item .sub-list').stop().slideToggle();
-
+        
+          $(this).siblings('.sub-list').stop().slideToggle();
         })
     
-    
+        $('.hb-menu .link-custom').click(function(e){
+
+          e.preventDefault();
+        
+          $(this).siblings('.sub-list').stop().slideToggle();
+        })
     
     
     
